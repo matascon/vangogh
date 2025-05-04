@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=National+Park:wght@200..800&display=swap');
 
 :root {
+  --mic-active: #f1b347;
   --primary-background: #f7f3ec;
   --background-item-nav: #f7f3ec;
   --border-item-nav: #f7f3ec;

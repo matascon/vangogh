@@ -59,7 +59,7 @@ nav {
 
 .search-voice-listening {
   border: 2px solid var(--border-item-action-nav);
-  background-color: var(--background-item-action-nav);
+  background-color: var(--mic-active);
 }
 
 .div-search > button > img {
