@@ -1,0 +1,118 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  height: 10%;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+}
+
+.div-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: auto;
+  width: auto;
+}
+
+.div-search > input {
+  border: 2px solid var(--border-item-nav);
+  outline: none;
+  box-shadow: none;
+  height: 3rem;
+  width: 40dvw;
+  font-size: 1.2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 25px;
+  font-family: "National Park", sans-serif;
+}
+
+.div-search > input:focus {
+  border-color: var(--border-item-action-nav);
+}
+
+.div-search > button {
+  height: 3rem;
+  width: 3rem;
+  padding: 0.5rem;
+  border-radius: 25px;
+  transition: all 300ms ease-in-out;
+}
+
+.div-search > button:hover {
+  cursor: pointer;
+  border-color: var(--border-item-action-nav);
+  background-color: var(--background-item-action-nav);
+}
+
+.search-text {
+  border: 2px solid var(--border-item-nav);
+  background-color: var(--backgrounditem-nav);
+}
+
+.search-voice {
+  border: 2px solid var(--border-item-nav);
+  background-color: var(--backgrounditem-nav);
+}
+
+.search-voice-listening {
+  border: 2px solid var(--border-item-action-nav);
+  background-color: var(--background-item-action-nav);
+}
+
+.div-search > button > img {
+  height: 100%;
+  width: 100%;
+}
+
+.div-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: auto;
+  width: auto;
+  transition: transform 400ms ease-in-out;
+}
+
+.div-title:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+.div-title > img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.div-title > p {
+  font-family: "Charm", cursive;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 700px) {
+  nav {
+    height: auto;
+    flex-direction: column;
+    gap: 2.25rem;
+    padding: 2rem 0 2rem 0;
+  }
+
+  .div-search {
+    padding: 0 1rem 0 1rem;
+    flex-wrap: wrap;
+    gap: 2.25rem;
+  }
+
+  .div-search > input {
+    width: 20rem;
+    border-color: var(--border-item-action-nav);
+  }
+
+  .div-search > button {
+    background-color: var(--background-item-action-nav);
+    border-color: var(--border-item-action-nav);
+  }
+}

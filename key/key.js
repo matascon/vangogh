@@ -1,0 +1,1 @@
+export const ACCESS_KEY = import.meta.env.VITE_ACCESS_UNSPLASH_KEY;
