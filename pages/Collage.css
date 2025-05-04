@@ -43,7 +43,6 @@
   align-items: center;
   flex-direction: column;
   gap: 7rem;
-  height: 80%;
 }
 
 .collage-images-error {
@@ -119,7 +118,7 @@
   }
 
   .collage-issue {
-    padding: 0 2rem 0 2rem;
+    padding: 1rem 2rem 1rem 2rem;
   }
 
   .words-suggested > li {
