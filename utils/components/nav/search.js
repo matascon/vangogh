@@ -11,15 +11,16 @@ export const search = () => {
     recognition.interimResults = false;
 
     recognition.onstart = () => {
-      console.log("El reconocimiento de voz ha comenzado...");
-      const voiceButton = document.querySelector('.search-voice');
-      voiceButton.className = 'search-voice-listening';
+      console.log('El reconocimiento de voz ha comenzado...');
+      document.querySelector('.search-voice').className = 'search-voice-listening';
+      document.querySelector('.div-search > input').value = '';
+      document.querySelector('.div-search > input').placeholder = 'Listening';
     };
 
     recognition.onend = () => {
-      console.log("El reconocimiento de voz ha terminado.");
-      const voiceButton = document.querySelector('.search-voice-listening');
-      voiceButton.className = 'search-voice';
+      console.log('El reconocimiento de voz ha terminado.');
+      document.querySelector('.search-voice-listening').className = 'search-voice';
+      document.querySelector('.div-search > input').placeholder = 'Search';
     };
 
     recognition.onerror = (event) => {

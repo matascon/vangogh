@@ -95,7 +95,12 @@ nav {
 }
 
 @media (max-width: 1024px) {
-  .div-search > button {
+  .search-text {
+    background-color: var(--background-item-action-nav);
+    border-color: var(--border-item-action-nav);
+  }
+
+  .search-voice {
     background-color: var(--background-item-action-nav);
     border-color: var(--border-item-action-nav);
   }
@@ -117,11 +122,6 @@ nav {
 
   .div-search > input {
     width: 20rem;
-    border-color: var(--border-item-action-nav);
-  }
-
-  .div-search > button {
-    background-color: var(--background-item-action-nav);
     border-color: var(--border-item-action-nav);
   }
 }
